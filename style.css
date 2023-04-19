@@ -1,0 +1,75 @@
+:root {
+  --background: #fff;
+  --note: #ffff99;
+  --font: #ccc;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: var(--background);
+  min-height: 100svh;
+  margin: 0 auto;
+  gap: 5rem;
+  /*   font-family: Bradley Hand; */
+  /*   font-family: Brush Script MT; */
+  /*   font-family: Luminari; */
+  /*   font-family: Comic Sans MS; */
+  font-family: American Typewriter;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5rem;
+  width: 100%;
+}
+
+button {
+  margin: 1rem;
+  padding: 1em 2em;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.note {
+  box-sizing: border-box;
+  width: 300px;
+  height: 350px;
+  padding: 1rem;
+  background: var(--note);
+  transform: rotateZ(2deg);
+}
+
+.title {
+  font-size: 1.75rem;
+  background: transparent;
+  width: 100%;
+  min-height: 50px;
+  border: none;
+  font-family: initial;
+}
+
+.content {
+  font-size: 1rem;
+  background: transparent;
+  width: 100%;
+  height: calc(100% - 56px);
+  border: none;
+  font-family: initial;
+}
+
+#remove {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: tomato;
+  cursor: pointer;
+}

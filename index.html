@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sliding Puzzle</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="game.js"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <button id="add">Add Note</button>
+    <button onclick="clearLocalStorage()">Clear Local Storage</button>
+  </div>
+
+  <section id="notes"></section>
+
+  <template data-note-template>
+    <div class="note">
+      <input type="text" class="title" placeholder="Title...">
+      <textarea class="content" placeholder="Content..."></textarea>
+      <span id="remove">X</span>
+    </div>
+  </template>
+
+</body>
+
+</html>
